@@ -1,7 +1,7 @@
 #!/bin/sh
 
-sudo dnf -y upgrade --releasever=2023.3.20240205
-sudo dnf -y install gcc make patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
+sudo dnf upgrade --releasever=2023.3.20240205  -y
+sudo dnf install gcc make patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel -y
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 export PYENV_ROOT="$HOME/.pyenv"
