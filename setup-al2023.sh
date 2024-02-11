@@ -1,7 +1,7 @@
 #!/bin/sh
 
-sudo yum update
-sudo yum install gcc make patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
+sudo yum -y update
+sudo yum -y install gcc make patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 export PYENV_ROOT="$HOME/.pyenv"
